@@ -1,10 +1,17 @@
-#include <stdio.h>
-
-int main(){
-	int n;
-	printf("Enter a number: ");
-	scanf("%d" , &n);
+#include<stdio.h>
+void main (){
+	char alphabet;
+	printf("Alphabet is: ");
+	scanf("%c",&alphabet);
 	
-	printf("Square of number is %d" ,n*n);
-	printf("Cube is %d" , n*n*n);
+	if(alphabet>='A' && alphabet<='Z')
+	{
+		printf("Alphabet is Uppercase");
+		
+	}
+	else
+	{
+		printf("Alphabet is Lowercase");
+	}
+	
 }

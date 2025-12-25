@@ -1,8 +1,16 @@
-# include <stdio.h>
+
+#include <stdio.h>
 
 void main(){
-	int c = 20;
-	int f = ( c * 9/5 )+32 ;
+	int year;
+	printf("Year is: ");
+	scanf("%d", &year);
 	
-	printf ("%d" , f);
+	if(year%4==0){
+		printf("year is leap");
+	
+	}
+	else {
+		printf("Year is not a leap year");
+	}
 }

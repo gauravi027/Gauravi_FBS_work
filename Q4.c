@@ -1,13 +1,19 @@
+
 #include <stdio.h>
 
 void main(){
-	int a = 5 , b = 50 , temp;
+	char ch;
+	printf("Enter a char:");
+	scanf("%c", &ch );
 	
-printf("BEFORE: a=%d , b=%d", a,b);
-
-temp = a;
-a = b;
-b = temp;
-
-printf("AFTER: a=%d , b=%d ", a,b);
+	if (ch=='a' || ch=='e' || ch=='i' || ch=='o' || ch=='u' ||
+    ch=='A' || ch=='E' || ch=='I' || ch=='O' || ch=='U') 
+	{
+		printf("Charachter is a vowel");
+	}
+	else {
+	
+			printf("charachter entered is not a vowel");
+		}
+	
 }
